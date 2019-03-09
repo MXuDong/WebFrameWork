@@ -1,4 +1,8 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
+
+
 
 /**
  * @author Dong
@@ -13,8 +17,12 @@ import org.junit.Test;
 
 public class TestMain {
 
+    private static final Logger LOGGER = LogManager.getLogger("com.test0");
+
     @Test
     public void TestProgrameBegin(){
         System.out.println("It's OK");
+        LOGGER.trace("Test Trace");
     }
+
 }
