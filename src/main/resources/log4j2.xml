@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+
+    <Properties>
+        <Property name="LogFileName">/target/out.log</Property>
+    </Properties>
+
+    <Appenders>
+        <Appender type="file" name="FileOut" fileName="${LogFileName}">
+            <Layout type="PatternLayout" pattern="%m MDC%X%n"/>
+        </Appender>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{default} [%t] (%F) %-5level %logger{36} LogOut: %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="log4j.TestLog4jConfig" level="trace">
+            <AppenderRef ref="Console"/>
+        </Logger>
+
+        <Logger name="log4j" level="trace">
+            <AppenderRef ref="FileOut" />
+        </Logger>
+
+        <Root level="trace">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
