@@ -6,9 +6,6 @@
     </Properties>
 
     <Appenders>
-        <Appender type="file" name="FileOut" fileName="${LogFileName}">
-            <Layout type="PatternLayout" pattern="%m MDC%X%n"/>
-        </Appender>
 
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{default} [%t] (%F) %-5level %logger{36} LogOut: %msg%n"/>
