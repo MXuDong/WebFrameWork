@@ -11,7 +11,9 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
  * Create Time : 12:32
  * Create Date : 2019/3/14
  * Project : WebFrameWork
+ * aim:基本Bean获取
  */
+
 
 public class Test01Main {
     public static void main(String[] args) {

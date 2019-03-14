@@ -7,6 +7,7 @@ package com.dong.test.Test02;
  * Create Time : 12:39
  * Create Date : 2019/3/14
  * Project : WebFrameWork
+ * aim:bean传值
  */
 
 public class People {

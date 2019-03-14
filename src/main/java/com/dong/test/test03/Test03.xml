@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="Test03People" class="com.dong.test.test03.People">
+        <property name="name" value="赵本山"/>
+    </bean>
+
+    <bean name="Test03Student" class="com.dong.test.test03.Student">
+        <property name="father" ref="Test03People" />
+        <property name="studentName" value="赵四" />
+    </bean>
+
+</beans>
