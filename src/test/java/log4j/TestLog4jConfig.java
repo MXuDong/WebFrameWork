@@ -25,7 +25,7 @@ public class TestLog4jConfig {
         loggerSecond = LogManager.getLogger();
     }
 
-    @Test
+//    @Test
     public void TestLog4jConfigs(){
         loggerFirst.trace("test trace");
         loggerFirst.debug("test debug");

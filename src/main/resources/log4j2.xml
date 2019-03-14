@@ -15,15 +15,15 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="log4j.TestLog4jConfig" level="trace">
-            <AppenderRef ref="Console"/>
+
+
+        <Logger name="com" level="debug" additivity="false">
+            <AppenderRef ref="Console">
+
+            </AppenderRef>
         </Logger>
 
-        <Logger name="log4j" level="trace">
-            <AppenderRef ref="FileOut" />
-        </Logger>
-
-        <Root level="trace">
+        <Root level="error">
             <AppenderRef ref="Console"/>
         </Root>
     </Loggers>

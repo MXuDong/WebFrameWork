@@ -19,7 +19,7 @@ public class TestMain {
 
     private static final Logger LOGGER = LogManager.getLogger("com.test0");
 
-    @Test
+//    @Test
     public void TestProgrameBegin(){
         System.out.println("It's OK");
         LOGGER.trace("Test Trace");
